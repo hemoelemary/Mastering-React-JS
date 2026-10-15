@@ -1,7 +1,10 @@
 import JSXRules from './components/jsxrules'
+import Greeting from './components/dynamic';
+import ProductInfo from './components/productinfo';
 const App = ()=>{
   const myName = 'Hamoda';
-  multiply = (a,b)=>a*b
+  const multiply = (a,b)=>a*b;
+  const specialClass = 'simple-class'
   return( <section>
     <h1>My Website</h1>
     <article>
@@ -14,7 +17,10 @@ const App = ()=>{
         {myName}        
       </h1>
       <p>{[1,2,3,4]}</p>
-      <p>2*2</p>
+      <p>2*2:{multiply(2,2)}</p>
+      <p className={specialClass}>special</p>
+      <Greeting></Greeting>
+      <ProductInfo></ProductInfo>
       <JSXRules></JSXRules>
     </div>
   </section>
