@@ -25,3 +25,15 @@ Our First command:
 
 # Components
 They are Independent & reusable bits of code/ serve same purpose as js functions but work in isolation and return HTML / JSX
+
+# JSX
+JSX simply means javascript xml 
+
+# classes forms in jsx
+
+class => className
+for => htmlFor
+
+# expressions in jsx
+with jsx you can write expressions inside curly braces . can be react variables or expression
+return <p>{2+2}</p>
