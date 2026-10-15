@@ -4,7 +4,25 @@ import ProductInfo from './components/productinfo';
 const App = ()=>{
   const myName = 'Hamoda';
   const multiply = (a,b)=>a*b;
-  const specialClass = 'simple-class'
+  const specialClass = 'simple-class';
+  const numbers = [1,2,3,4,5];
+   const usersInfo = [
+    {
+      username: "HuXn",
+      email: "test@gmail.com",
+      location: "USA",
+    },
+    {
+      username: "John",
+      email: "jd@gmail.com",
+      location: "Arab",
+    },
+    {
+      username: "Alex",
+      email: "alexmersion@gmail.com",
+      location: "India",
+    },
+  ];
   return( <section>
     <h1>My Website</h1>
     <article>
@@ -22,6 +40,23 @@ const App = ()=>{
       <Greeting></Greeting>
       <ProductInfo></ProductInfo>
       <JSXRules></JSXRules>
+      <div>
+        <ul>
+        {numbers.map(number=>(
+        
+            <li key={number}>{number}</li>  
+        ))}
+        </ul>
+        <ul>
+          {usersInfo.map(({username,email,location})=>(
+            <li key={Math.random()}>
+              {username}
+              {location}
+            </li>
+          ))}
+        </ul>
+      </div>
+
     </div>
   </section>
   )

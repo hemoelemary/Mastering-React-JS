@@ -37,3 +37,8 @@ for => htmlFor
 # expressions in jsx
 with jsx you can write expressions inside curly braces . can be react variables or expression
 return <p>{2+2}</p>
+
+# lists in React Js
+using maps
+const numbers = [1,2,3,4,5,6]
+numbers.map((number)=>{})
