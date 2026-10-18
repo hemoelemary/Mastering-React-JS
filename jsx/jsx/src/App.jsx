@@ -1,6 +1,7 @@
 import JSXRules from './components/jsxrules'
 import Greeting from './components/dynamic';
 import ProductInfo from './components/productinfo';
+import UserList from './components/usrlist';
 const App = ()=>{
   const myName = 'Hamoda';
   const multiply = (a,b)=>a*b;
@@ -58,6 +59,7 @@ const App = ()=>{
       </div>
 
     </div>
+    <UserList></UserList>
   </section>
   )
 }
