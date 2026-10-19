@@ -85,3 +85,11 @@ const app()=>{
 
 # Conditional Rendering
 conditional rendering allows us to dynamically display different UI components or content based on specific conditions .this enables us to create more interactive experiences
+
+we can use ternary operator
+isEmpty?<>empty</>:<>Not Empty</>
+
+we can use if else
+we can use {isEmpty && <>Empty</>}
+
+# Styling
