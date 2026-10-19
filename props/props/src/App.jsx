@@ -1,11 +1,15 @@
 import Person from "./components/person"
 import Products from "./components/products"
+import test from "./components/test"
 const App = ()=>{
   return (
     <>
     <User name='Hamoda' img='https://avatars.githubusercontent.com/u/228161339?v=4' age={19} hobbies={['coding','reading','sleeping']}></User>
     <Person name='Hamoda' age={12}></Person>
     <Products name='Shop' price='30EGP'></Products>
+    <test>
+      <h1>hi</h1>
+    </test>
     </>
   )
 

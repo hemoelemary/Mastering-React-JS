@@ -52,3 +52,36 @@ props are arguments passed into components
 props allows us to pass data from parent component to child components
 
 props passed via html attributes
+
+const prop = (props)=>{
+    return (<>
+        {props.name}
+        {props.age}  
+    </>)
+}
+
+const inner = ({inner})=>{
+    return (
+        <>
+            {inner}
+        </>
+    )
+}
+
+
+> destructuring
+const propa = ({name,age})=>{
+    {name}
+    {age}
+}
+when used props from component :
+const app()=>{
+    return(
+        <>
+        <propa name='hamoda' age=19>
+        </>
+    )
+}
+
+# Conditional Rendering
+conditional rendering allows us to dynamically display different UI components or content based on specific conditions .this enables us to create more interactive experiences
