@@ -1,6 +1,6 @@
 import './app.css'
 import { CiShoppingCart } from "react-icons/ci";
-import StyledCard from './components/styledcarts';
+import {StyledCard} from './components/styledcarts';
 import { LuCarTaxiFront } from "react-icons/lu";
 const App = ()=>{
   const styles = {color:'white',backgroundColor:'teal',padding:'2rem'}
