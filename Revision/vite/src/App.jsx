@@ -1,3 +1,4 @@
+import { useState } from "react";
 import X from "./components/x";
 
 const Y = ({name,age})=>{
@@ -17,6 +18,10 @@ function App(){
   const isLoggedIn = true;
   const isThisTrue = true;
   const count = 0;
+  const [data,updateData] = useState({name:'name',counter:0})
+  const func = ()=>{
+    updateData({...data,counter:data.counter+1})
+  }
   return(
     <>
     <h1>Hello , {name}</h1>
@@ -26,6 +31,8 @@ function App(){
     {isLoggedIn?<Y name='mohamed' age={20}></Y>:<h3>mm</h3>}
     {isThisTrue&&<h1>Yess</h1>}
     {count && <h2>yo</h2>}
+    <h1>{data.counter}</h1>
+    <button onClick={func}>+</button>
     <h6 style={{'color':'red','backgroundColor':isThisTrue?'green':'blue'}}>redblue</h6>
     </>
   )
