@@ -1,5 +1,6 @@
 import { use } from "react"
 import { useState } from "react"
+import State from "./components/states"
 
 function App() {
   // const counter = useState(0)
@@ -42,6 +43,8 @@ function App() {
       </button>
       <button onClick={remove}>Remove Friend</button>
     </section>
+    <hr/>
+    <State></State>
     </>
   )
 }
