@@ -93,3 +93,17 @@ we can use if else
 we can use {isEmpty && <>Empty</>}
 
 # Styling
+
+style={{backgroundColor:'green'}} first for js second for object
+
+# State
+
+state is a way to store and manage data that can change over time and affects how the component renders. We define state using the useState Hook, which allows you to set an initial value and provides a way to update that state
+
+# Hooks
+
+we use functional based components 
+
+useState() allows us to track state in a functional component. State generally refers to data that need to be tracked in app.
+
+const[data,changeData] = useState()
