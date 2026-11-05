@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ObjS from "./objstates";
 
 const State=()=>{
     const [count,setCount]=useState(0)
@@ -31,6 +32,8 @@ const State=()=>{
         <button onClick={addPeople}>AddPeople</button>
         <button onClick={removePeople}>removePeople</button>
         <button onClick={update}>updatePeople</button>
+        <hr></hr>
+        <ObjS></ObjS>
     </>
     )
 }
