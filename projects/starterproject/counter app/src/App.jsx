@@ -6,7 +6,7 @@ function App() {
   const [interval,setIntervalel] = useState()
   const clickHandler = ()=>{
     const intervalId = setInterval(()=>{
-      setCounter(counter => counter+1)
+      setCounter(counter=>counter+1)
     },1000)
     setIntervalel(intervalId)
     isClicked(true)
